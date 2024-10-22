@@ -12,6 +12,7 @@ N_EVAL_EPISODES = 10
 
 
 def get_eval_callback():
+    """create and return Evaluation Callback"""
     eval_callback = EvalCallback(
         EVAL_ENV,
         best_model_save_path=BEST_MODEL_SAVE_PATH,

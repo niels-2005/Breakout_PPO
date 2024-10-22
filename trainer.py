@@ -9,6 +9,7 @@ TOTAL_TIMESTEPS = 15000000
 
 
 def train_model():
+    """train the Model"""
     MODEL.learn(
         total_timesteps=TOTAL_TIMESTEPS,
         callback=EVAL_CALLBACK,
